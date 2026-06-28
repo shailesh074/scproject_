@@ -10,3 +10,11 @@ const appData = {
         isMobile: window.innerWidth <= 768
     }
 };
+// 2. UTILITY & HELPER FUNCTIONS
+const formatINR = (num) => {
+    return new Intl.NumberFormat('en-IN', {
+        style: 'currency',
+        currency: 'INR',
+        maximumFractionDigits: 0
+    }).format(num);
+};
