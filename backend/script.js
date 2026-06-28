@@ -113,3 +113,23 @@ function initThreeJS() {
 
     // 3D Extrusion Engine (Faux-Volumetric Stacking for Text)
     function create3DTextGroup(texture, coreColor) {
+        const group = new THREE.Group();
+        const layers = 25; // Number of slices
+        const thickness = 3; // Gap between slices
+        
+        for (let i = 0; i < layers; i++) {
+            const isCap = (i === 0 || i === layers - 1);
+            const mat = new THREE.MeshBasicMaterial({ 
+                map: texture, 
+                transparent: true, 
+                alphaTest: 0.1, // Crops the transparent pixels to create solid edges
+                color: isCap ? 0xffffff : coreColor, // White faces, colored 3D depth
+                side: THREE.DoubleSide
+            });
+            const mesh = new THREE.Mesh(new THREE.PlaneGeometry(450, 450), mat);
+            mesh.position.z = (i - layers/2) * thickness;
+            group.add(mesh);
+        }
+        return group;
+    }
+
