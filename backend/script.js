@@ -210,3 +210,8 @@ function triggerLaunchSequence() {
         // Trigger reflow
         void sel('view-landing').offsetWidth;
         sel('view-landing').style.opacity = '1';
+    }, 4000);
+}
+
+function destroyThreeJS() {
+    if (animationId) cancelAnimationFrame(animationId);
