@@ -53,3 +53,8 @@ function initThreeJS() {
 
     // Particle System (The "Launch" Effect)
     const geometry = new THREE.BufferGeometry();
+    const particleCount = 15000;
+    const positions = new Float32Array(particleCount * 3);
+    const colors = new Float32Array(particleCount * 3);
+
+    const color1 = new THREE.Color(0x00E5FF); // Cyan
