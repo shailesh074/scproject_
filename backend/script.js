@@ -205,3 +205,8 @@ function triggerLaunchSequence() {
     setTimeout(() => {
         sel('view-landing').classList.remove('hidden');
         sel('view-landing').style.opacity = '0';
+	sel('view-landing').style.transition = 'opacity 1s ease';
+        
+        // Trigger reflow
+        void sel('view-landing').offsetWidth;
+        sel('view-landing').style.opacity = '1';
