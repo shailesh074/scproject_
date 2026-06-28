@@ -214,4 +214,15 @@ function triggerLaunchSequence() {
 }
 
 function destroyThreeJS() {
-    if (animationId) cancelAnimationFrame(animationId);
+    if (animationId) cancelAnimationFrame(animationId); 
+    const container = sel('three-container');
+    if (container) {
+        container.style.opacity = '0';
+        setTimeout(() => {
+            container.remove();
+            // Show normal background
+            sel('global-bg').classList.remove('hidden');
+        }, 1500);
+    }
+}
+
