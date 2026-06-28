@@ -179,3 +179,8 @@ function animateThreeJS() {
     }
     // Spin currency symbols horizontally only
     if (window.rupeeMesh) {
+        window.rupeeMesh.rotation.y += 0.03; // Horizontal only
+    }
+    if (window.dollarMesh) {
+        window.dollarMesh.rotation.y -= 0.03; // Horizontal only
+    }
