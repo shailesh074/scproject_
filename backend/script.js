@@ -169,3 +169,8 @@ function initThreeJS() {
     triggerLaunchSequence();
 }
 
+function animateThreeJS() {
+    animationId = requestAnimationFrame(animateThreeJS);
+    
+    // Spin particles and core
+    if (particles) {
