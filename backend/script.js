@@ -73,3 +73,18 @@ function initThreeJS() {
         // Mix colors
         const mixedColor = color1.clone().lerp(color2, Math.random());
         colors[i] = mixedColor.r;
+	colors[i + 1] = mixedColor.g;
+        colors[i + 2] = mixedColor.b;
+    }
+
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+    const material = new THREE.PointsMaterial({
+        size: 3,
+        vertexColors: true,
+        transparent: true,
+        opacity: 0.8,
+        blending: THREE.AdditiveBlending
+    });
+
