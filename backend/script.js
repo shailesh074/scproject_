@@ -93,3 +93,8 @@ function initThreeJS() {
 
     // Helper function to create massive, glowing symbol textures natively
     function createSymbolTexture(text, color) {
+	const canvas = document.createElement('canvas');
+        canvas.width = 1024;
+        canvas.height = 1024;
+        const ctx = canvas.getContext('2d');
+        ctx.textAlign = 'center';
