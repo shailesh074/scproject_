@@ -29,3 +29,7 @@ const getCategoryIcon = (cat) => {
     const icons = { 'Housing': '🏠', 'Food': '🍔', 'Transport': '🚗', 'Shopping': '🛍️', 'Utilities': '⚡', 'Other': '📌' };
     return icons[cat] || '📌';
 };
+// 3. THREE.JS 3D CINEMATIC LAUNCH ENGINE
+let scene, camera, renderer, particles, animationId;
+
+function initThreeJS() {
