@@ -1,1 +1,5 @@
-//THIS IS BACKEND;
+// 1. GLOBAL STATE MANAGEMENT
+const appData = {
+    budget: 0,
+    transactions: [],
+    accounts: [],
