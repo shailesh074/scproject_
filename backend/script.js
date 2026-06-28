@@ -38,3 +38,8 @@ function initThreeJS() {
 
     // Scene Setup
     scene = new THREE.Scene();
+    scene.fog = new THREE.FogExp2(0x030407, 0.001);
+
+    // Camera Setup
+    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 2000);
+    camera.position.z = 1000;
