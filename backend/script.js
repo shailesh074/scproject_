@@ -174,3 +174,8 @@ function animateThreeJS() {
     
     // Spin particles and core
     if (particles) {
+        particles.rotation.y += 0.002;
+        particles.rotation.x += 0.001;
+    }
+    // Spin currency symbols horizontally only
+    if (window.rupeeMesh) {
