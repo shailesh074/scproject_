@@ -68,3 +68,8 @@ function initThreeJS() {
 
         positions[i] = radius * Math.sin(phi) * Math.cos(theta);
         positions[i + 1] = radius * Math.sin(phi) * Math.sin(theta);
+	positions[i + 2] = radius * Math.cos(phi);
+
+        // Mix colors
+        const mixedColor = color1.clone().lerp(color2, Math.random());
+        colors[i] = mixedColor.r;
