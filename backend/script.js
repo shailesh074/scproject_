@@ -98,3 +98,8 @@ function initThreeJS() {
         canvas.height = 1024;
         const ctx = canvas.getContext('2d');
         ctx.textAlign = 'center';
+	ctx.textBaseline = 'middle';
+        ctx.font = '900 850px "Outfit", sans-serif';
+
+        ctx.shadowColor = color;
+        ctx.shadowBlur = 20;
