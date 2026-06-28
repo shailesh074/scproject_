@@ -190,3 +190,8 @@ function animateThreeJS() {
     if (camera.position.z > 400) {
         camera.position.z -= 4; // Zoom in fast
     }
+     
+    renderer.render(scene, camera);
+}
+
+function onWindowResize() {
