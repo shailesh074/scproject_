@@ -103,3 +103,8 @@ function initThreeJS() {
 
         ctx.shadowColor = color;
         ctx.shadowBlur = 20;
+	ctx.fillStyle = '#ffffff';
+        ctx.fillText(text, 512, 512);
+
+        const tex = new THREE.CanvasTexture(canvas);
+        tex.anisotropy = 16;
