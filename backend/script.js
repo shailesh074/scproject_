@@ -132,4 +132,9 @@ function initThreeJS() {
         }
         return group;
     }
-
+    
+    // 3D Rupee
+    const rupeeTex = createSymbolTexture('₹', '#00E5FF');
+    const rupeeMesh = create3DTextGroup(rupeeTex, 0x00E5FF);
+    rupeeMesh.position.x = -250;
+    scene.add(rupeeMesh);
