@@ -138,3 +138,8 @@ function initThreeJS() {
     const rupeeMesh = create3DTextGroup(rupeeTex, 0x00E5FF);
     rupeeMesh.position.x = -250;
     scene.add(rupeeMesh);
+    window.rupeeMesh = rupeeMesh;
+
+    // 3D Dollar
+    const dollarTex = createSymbolTexture('$', '#a78bfa');
+    const dollarMesh = create3DTextGroup(dollarTex, 0x7C3AED);
