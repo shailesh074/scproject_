@@ -88,3 +88,8 @@ function initThreeJS() {
         blending: THREE.AdditiveBlending
     });
 
+   particles = new THREE.Points(geometry, material);
+    scene.add(particles);
+
+    // Helper function to create massive, glowing symbol textures natively
+    function createSymbolTexture(text, color) {
