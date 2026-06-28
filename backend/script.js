@@ -153,3 +153,8 @@ function initThreeJS() {
     grid.material.opacity = 0.2;
     grid.material.transparent = true;
     scene.add(grid);
+    
+    // Lighting
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(ambientLight);
+
