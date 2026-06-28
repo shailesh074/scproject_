@@ -184,3 +184,9 @@ function animateThreeJS() {
     if (window.dollarMesh) {
         window.dollarMesh.rotation.y -= 0.03; // Horizontal only
     }
+
+     
+    // Dramatic Camera Zoom
+    if (camera.position.z > 400) {
+        camera.position.z -= 4; // Zoom in fast
+    }
