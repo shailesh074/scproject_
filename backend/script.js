@@ -58,3 +58,8 @@ function initThreeJS() {
     const colors = new Float32Array(particleCount * 3);
 
     const color1 = new THREE.Color(0x00E5FF); // Cyan
+    const color2 = new THREE.Color(0x7C3AED); // Purple
+
+    for (let i = 0; i < particleCount * 3; i += 3) {
+        // Spherical distribution
+        const radius = 800 + Math.random() * 1200;
