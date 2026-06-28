@@ -148,3 +148,8 @@ function initThreeJS() {
     window.dollarMesh = dollarMesh;
 
     // Grid Helper for High-Tech look
+    const grid = new THREE.GridHelper(2000, 40, 0x00E5FF, 0x00E5FF);
+    grid.position.y = -400;
+    grid.material.opacity = 0.2;
+    grid.material.transparent = true;
+    scene.add(grid);
