@@ -18,3 +18,14 @@ const formatINR = (num) => {
         maximumFractionDigits: 0
     }).format(num);
 };
+const sel = (id) => document.getElementById(id);
+const generateUUID = () => {
+    return 'tx-xxxx-4xxx-yxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+    });
+};
+const getCategoryIcon = (cat) => {
+    const icons = { 'Housing': '🏠', 'Food': '🍔', 'Transport': '🚗', 'Shopping': '🛍️', 'Utilities': '⚡', 'Other': '📌' };
+    return icons[cat] || '📌';
+};
