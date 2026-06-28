@@ -48,3 +48,8 @@ function initThreeJS() {
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setClearColor(0x030407, 1);
+    container.appendChild(renderer.domElement);
+
+    // Particle System (The "Launch" Effect)
+    const geometry = new THREE.BufferGeometry();
