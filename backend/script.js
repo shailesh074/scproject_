@@ -143,3 +143,8 @@ function initThreeJS() {
     // 3D Dollar
     const dollarTex = createSymbolTexture('$', '#a78bfa');
     const dollarMesh = create3DTextGroup(dollarTex, 0x7C3AED);
+    dollarMesh.position.x = 250;
+    scene.add(dollarMesh);
+    window.dollarMesh = dollarMesh;
+
+    // Grid Helper for High-Tech look
