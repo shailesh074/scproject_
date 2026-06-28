@@ -108,3 +108,8 @@ function initThreeJS() {
 
         const tex = new THREE.CanvasTexture(canvas);
         tex.anisotropy = 16;
+	    return tex;
+    }
+
+    // 3D Extrusion Engine (Faux-Volumetric Stacking for Text)
+    function create3DTextGroup(texture, coreColor) {
