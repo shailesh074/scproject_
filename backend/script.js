@@ -33,3 +33,8 @@ const getCategoryIcon = (cat) => {
 let scene, camera, renderer, particles, animationId;
 
 function initThreeJS() {
+    const container = sel('three-container');
+    if (!container) return;
+
+    // Scene Setup
+    scene = new THREE.Scene();
