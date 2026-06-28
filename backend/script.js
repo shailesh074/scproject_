@@ -200,3 +200,8 @@ function onWindowResize() {
     renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
+function triggerLaunchSequence() {
+    // After 4.0 seconds, reveal the UI over the 3D canvas
+    setTimeout(() => {
+        sel('view-landing').classList.remove('hidden');
+        sel('view-landing').style.opacity = '0';
