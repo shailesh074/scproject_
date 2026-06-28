@@ -63,3 +63,8 @@ function initThreeJS() {
     for (let i = 0; i < particleCount * 3; i += 3) {
         // Spherical distribution
         const radius = 800 + Math.random() * 1200;
+	const theta = Math.random() * 2 * Math.PI;
+        const phi = Math.acos((Math.random() * 2) - 1);
+
+        positions[i] = radius * Math.sin(phi) * Math.cos(theta);
+        positions[i + 1] = radius * Math.sin(phi) * Math.sin(theta);
