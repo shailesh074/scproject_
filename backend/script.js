@@ -48,3 +48,8 @@ function initWidgetListeners() {
 
     // --- 2. Master Transaction Engine ---
     sel('btn-add-txn').onclick = () => {
+        const title = sel('new-txn-title').value.trim() || 'Uncategorized Debit';
+        const amount = +sel('new-txn-amount').value;
+        const cat = sel('new-txn-cat').value;
+        let date = sel('new-txn-date').value;
+
