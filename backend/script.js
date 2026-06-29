@@ -169,3 +169,5 @@ function renderSIPChart(years, monthlyP, rate) {
         labels.push(`Year ${yr}`);
 	const n = yr * 12;
         const currentInvested = monthlyP * n;
+	const futureValue = monthlyP * ((Math.pow(1 + i, n) - 1) / i) * (1 + i);
+        investedData.push(currentInvested);
