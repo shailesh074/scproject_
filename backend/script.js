@@ -86,3 +86,5 @@ function renderCharts() {
     appData.transactions.forEach(t => {
 	catTotals[t.category] = (catTotals[t.category] || 0) + t.amount;
     });
+    
+    const labels = Object.keys(catTotals).length ? Object.keys(catTotals) : ['Awaiting Data'];
