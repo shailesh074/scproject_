@@ -76,3 +76,5 @@ function renderCharts() {
         console.warn('Chart.js engine offline. Visualizations disabled.');
 	return;
     }
+     
+    Chart.defaults.color = '#8B949E';
