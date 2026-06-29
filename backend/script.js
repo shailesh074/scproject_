@@ -102,3 +102,5 @@ function renderCharts() {
                 data: {
 		    labels: labels,
                     datasets: [{
+			label: 'Capital Outflow (₹)',
+                        data: data,
