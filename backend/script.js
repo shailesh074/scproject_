@@ -184,3 +184,8 @@ function renderSIPChart(years, monthlyP, rate) {
                         label: 'Invested Capital', 
                         data: investedData, 
                         borderColor: '#7C3AED',
+			borderWidth: 3,
+                        pointRadius: 4,
+                        tension: 0.4
+                    },
+                    {
