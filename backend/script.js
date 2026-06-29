@@ -154,3 +154,10 @@ function renderCharts() {
 
 // --- Chart 3: SIP Line Chart Projection ---
 function renderSIPChart(years, monthlyP, rate) {
+    if(!window.Chart) return;
+    const ctxSIP = sel('sipChart');
+    if (!ctxSIP) return;
+
+    const labels = [];
+    const investedData = [];
+    const returnsData = [];
