@@ -88,3 +88,5 @@ function renderCharts() {
     });
     
     const labels = Object.keys(catTotals).length ? Object.keys(catTotals) : ['Awaiting Data'];
+    const data = Object.values(catTotals).length ? Object.values(catTotals) : [0];
+    
