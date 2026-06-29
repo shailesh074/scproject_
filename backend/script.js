@@ -198,3 +198,9 @@ function renderSIPChart(years, monthlyP, rate) {
                         pointRadius: 4,
                         tension: 0.4
                     }
+		]
+            },
+            options: {
+                responsive:true, maintainAspectRatio:false,
+                interaction: { mode: 'index', intersect: false },
+                plugins: { tooltip: { padding: 15 } }
