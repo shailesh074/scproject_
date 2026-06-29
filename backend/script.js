@@ -54,4 +54,9 @@ function renderApp() {
     appData.transactions.forEach(t => totalExpenses += t.amount);
     
     let totalAssets = 0;
-    appData.accounts.forEach(a => totalAssets += a.balance);
+    appData.accounts.forEach(a => totalAssets += a.balance); 
+    
+    const currentBalance = appData.budget - totalExpenses;
+    const liquidNetWorth = currentBalance + totalAssets;
+
+    // Phase 2: DOM Injection for Core Stats
