@@ -119,3 +119,8 @@ function renderCharts() {
         } else {
             appData.charts.expenseBar.data.labels = labels;
             appData.charts.expenseBar.data.datasets[0].data = data;
+	    appData.charts.expenseBar.update();
+        }
+    }
+
+    // --- Chart 2: Doughnut Chart (Radial Breakdown) ---
