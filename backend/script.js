@@ -189,3 +189,8 @@ function renderSIPChart(years, monthlyP, rate) {
                         tension: 0.4
                     },
                     {
+		        label: 'Expected Portfolio Value', 
+                        data: returnsData, 
+                        borderColor: '#00E5FF', 
+                        backgroundColor: 'rgba(0, 229, 255, 0.1)', 
+                        borderWidth: 3,
