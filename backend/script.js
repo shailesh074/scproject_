@@ -66,3 +66,6 @@
 	 });
     }
 
+    // Phase 7: Dispatch Chart Updates
+    renderCharts();
+}
