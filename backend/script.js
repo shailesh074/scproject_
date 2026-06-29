@@ -59,3 +59,8 @@ function initWidgetListeners() {
         if(amount > 0) {
             appData.transactions.push({
                 id: generateUUID(),
+	        date: date,
+                title: title,
+                category: cat,
+                amount: amount
+            });
