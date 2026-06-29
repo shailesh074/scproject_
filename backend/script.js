@@ -104,3 +104,5 @@ function renderCharts() {
                     datasets: [{
 			label: 'Capital Outflow (₹)',
                         data: data,
+			backgroundColor: '#00E5FF',
+                        borderRadius: 8,
