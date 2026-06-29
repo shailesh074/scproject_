@@ -40,3 +40,5 @@
         });
     }
 
+    // Phase 6: Financial Goals Progress Tracker
+    const gl = sel('goals-list'); gl.innerHTML = '';
