@@ -72,3 +72,5 @@
 
 // 7. CHART.JS ANALYTICS ENGINE
 function renderCharts() {
+    if(!window.Chart) {
+        console.warn('Chart.js engine offline. Visualizations disabled.');
