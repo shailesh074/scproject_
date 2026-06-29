@@ -134,3 +134,8 @@ function renderCharts() {
                     datasets: [{
                         data: data,
                         backgroundColor: bgColors,
+			borderWidth: 2,
+                        borderColor: '#07090C',
+                        hoverOffset: 10
+                    }]
+                },
