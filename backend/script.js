@@ -18,3 +18,6 @@
 		 `;
         });
     }
+
+    // Phase 5: Assets & Bank Accounts
+    const al = sel('accounts-list'); al.innerHTML = '';
