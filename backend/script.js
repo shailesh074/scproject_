@@ -80,3 +80,9 @@ function renderApp() {
                             <p class="text-secondary text-xs">${t.category} • ${t.date}</p>
                         </div>
                     </div>
+		    <div class="text-red font-bold text-lg">-${formatINR(t.amount)}</div>
+                </div>
+            `;
+        });
+    }
+
