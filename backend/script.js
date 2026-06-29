@@ -82,3 +82,5 @@ function renderCharts() {
     Chart.defaults.scale.grid.color = 'rgba(255,255,255,0.05)';
 
     // Aggregation Logic for Categories
+    const catTotals = {};
+    appData.transactions.forEach(t => {
