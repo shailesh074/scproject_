@@ -25,3 +25,8 @@ i   // --- 5. Mutual Fund SIP Projection (Compound Math) ---
             res.classList.remove('hidden');
 
             // Hook into Chart Engine
+            renderSIPChart(t_years, p, r_annual);
+        } else {
+            res.classList.add('hidden');
+        }
+    };
