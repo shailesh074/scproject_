@@ -35,3 +35,8 @@
                         </div>
 		    </div>
                     <div class="text-cyan font-bold text-lg">${formatINR(a.balance)}</div>
+	        </div>
+            `;
+        });
+    }
+
