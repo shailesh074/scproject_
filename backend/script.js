@@ -89,3 +89,8 @@ function initWidgetListeners() {
         const name = sel('new-acc-name').value.trim();
         const bal = +sel('new-acc-bal').value;
         if(name && bal >= 0 && sel('new-acc-bal').value !== "") {
+            appData.accounts.push({ name, balance: bal, id: generateUUID() });
+            sel('new-acc-name').value = '';
+            sel('new-acc-bal').value = '';
+            renderApp();
+        } else {
