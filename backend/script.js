@@ -60,3 +60,8 @@ function renderApp() {
     const liquidNetWorth = currentBalance + totalAssets;
 
     // Phase 2: DOM Injection for Core Stats
+    sel('total-balance').innerText = formatINR(currentBalance); 
+    sel('total-assets').innerText = formatINR(totalAssets);
+    sel('total-expenses').innerText = formatINR(totalExpenses);
+
+    // Phase 3: Recent Transactions Widget (Dashboard)
