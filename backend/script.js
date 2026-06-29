@@ -15,3 +15,6 @@
                     <td><span class="glass px-4 py-2 rounded-xl text-xs">${icon} ${t.category}</span></td>
 		    <td class="text-red font-bold text-right text-lg">-${formatINR(t.amount)}</td>
                 </tr>
+		 `;
+        });
+    }
