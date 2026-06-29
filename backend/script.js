@@ -42,3 +42,9 @@ function initWidgetListeners() {
             res.classList.remove('hidden');
         } else {
             res.classList.add('hidden');
+        }
+    };
+    ['calc-p', 'calc-r', 'calc-t'].forEach(id => sel(id).addEventListener('input', calcInt));
+
+    // --- 2. Master Transaction Engine ---
+    sel('btn-add-txn').onclick = () => {
