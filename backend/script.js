@@ -51,3 +51,5 @@
 	    const isComplete = progress >= 100;
             
             gl.innerHTML += `
+	       <div class="expense-item" style="display:block; padding: 1.5rem;">
+                    <div class="flex-between align-center mb-2">
