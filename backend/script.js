@@ -78,3 +78,6 @@ function renderCharts() {
     }
      
     Chart.defaults.color = '#8B949E';
+    Chart.defaults.font.family = "'Outfit', sans-serif";
+    Chart.defaults.scale.grid.color = 'rgba(255,255,255,0.05)';
+
