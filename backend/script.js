@@ -119,3 +119,13 @@ function initWidgetListeners() {
             sched.innerHTML = `
                 <div class="expense-item">
                     <div><h4>Principal Borrowed</h4><p class="text-xs text-secondary">Initial Loan Amount</p></div>
+		    <div class="font-bold text-lg">${formatINR(p)}</div>
+                </div>
+                <div class="expense-item">
+                    <div><h4>Interest Component</h4><p class="text-xs text-secondary">Cost of Debt</p></div>
+                    <div class="text-red font-bold text-lg">+${formatINR(totalInterest)}</div>
+                </div>
+                <div class="divider mt-2 mb-2"></div>
+                <div class="expense-item" style="background: rgba(0,229,255,0.05); border-color: rgba(0,229,255,0.2);">
+                    <div><h4 class="text-cyan">Total Debt Burden</h4><p class="text-xs text-secondary">Over ${n} months</p></div>
+                    <div class="text-cyan font-extrabold text-xl">${formatINR(totalPayment)}</div>
