@@ -94,3 +94,8 @@ function initWidgetListeners() {
             sel('new-acc-bal').value = '';
             renderApp();
         } else {
+            alert('SYSTEM HALT: Invalid Asset parameters.');
+        }
+    };
+
+    // --- 4. Loan Amortization Algorithm ---
