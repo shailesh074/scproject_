@@ -30,3 +30,8 @@ i   // --- 5. Mutual Fund SIP Projection (Compound Math) ---
             res.classList.add('hidden');
         }
     };
+    ['sip-p', 'sip-r', 'sip-t'].forEach(id => sel(id).addEventListener('input', calcSIP));
+
+    // --- 6. Financial Goals Engine ---
+    sel('btn-add-goal').onclick = () => {
+        const name = sel('goal-name').value.trim();
