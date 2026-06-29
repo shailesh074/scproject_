@@ -165,3 +165,5 @@ function renderSIPChart(years, monthlyP, rate) {
     const i = rate / 100 / 12;
 
     // Generate data points for each year
+    for(let yr = 1; yr <= years; yr++) {
+        labels.push(`Year ${yr}`);
