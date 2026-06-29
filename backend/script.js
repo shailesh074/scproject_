@@ -84,3 +84,8 @@ function initWidgetListeners() {
         document.querySelector('.nav-links li[data-view="transactions"]').click();
     };
 
+    // --- 3. Bank Accounts / Assets Manager ---
+    sel('btn-add-acc').onclick = () => {
+        const name = sel('new-acc-name').value.trim();
+        const bal = +sel('new-acc-bal').value;
+        if(name && bal >= 0 && sel('new-acc-bal').value !== "") {
