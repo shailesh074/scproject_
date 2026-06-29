@@ -79,3 +79,8 @@ function initWidgetListeners() {
         }
     };
 
+    // Routing shortcut for "View All"
+    sel('view-all-txns').onclick = () => {
+        document.querySelector('.nav-links li[data-view="transactions"]').click();
+    };
+
