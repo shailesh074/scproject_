@@ -204,3 +204,8 @@ function renderSIPChart(years, monthlyP, rate) {
                 responsive:true, maintainAspectRatio:false,
                 interaction: { mode: 'index', intersect: false },
                 plugins: { tooltip: { padding: 15 } }
+	    }
+        });
+    } else {
+        appData.charts.sipLineChart.data.labels = labels;
+        appData.charts.sipLineChart.data.datasets[0].data = investedData;
