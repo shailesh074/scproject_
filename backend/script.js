@@ -65,3 +65,8 @@ function renderApp() {
     sel('total-expenses').innerText = formatINR(totalExpenses);
 
     // Phase 3: Recent Transactions Widget (Dashboard)
+    const rl = sel('recent-transactions'); rl.innerHTML = '';
+    if (appData.transactions.length === 0) {
+        rl.innerHTML = '<p class="text-secondary p-4 text-center border-dashed rounded mt-4">Ledger is empty.</p>';
+    } else {
+        appData.transactions.slice(0, 5).forEach(t => {
