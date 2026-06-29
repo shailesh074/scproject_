@@ -75,3 +75,8 @@ function renderApp() {
                 <div class="expense-item">
                     <div class="flex align-center">
                         <div class="expense-icon">${icon}</div>
+		        <div>
+                            <h4>${t.title}</h4>
+                            <p class="text-secondary text-xs">${t.category} • ${t.date}</p>
+                        </div>
+                    </div>
