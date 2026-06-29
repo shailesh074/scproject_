@@ -124,3 +124,8 @@ function renderCharts() {
     }
 
     // --- Chart 2: Doughnut Chart (Radial Breakdown) ---
+    const ctxDoughnut = sel('doughnutChart');
+    if (ctxDoughnut) {
+        if (!appData.charts.expenseRadial) {
+            appData.charts.expenseRadial = new Chart(ctxDoughnut, {
+                type: 'doughnut',
