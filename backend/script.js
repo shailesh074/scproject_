@@ -28,3 +28,8 @@
     // Initialize Widget Event Listeners
     initWidgetListeners();
 });
+
+// 5. WIDGET EVENT BINDINGS
+function initWidgetListeners() {
+
+    // --- 1. Quick Interest Calculator ---
