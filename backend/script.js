@@ -27,3 +27,5 @@
         appData.accounts.forEach(a => {
 	   al.innerHTML += `
                 <div class="expense-item">
+		    <div class="flex align-center">
+                        <div class="expense-icon" style="background: rgba(124,58,237,0.1); color: var(--accent-purple);">🏦</div>
