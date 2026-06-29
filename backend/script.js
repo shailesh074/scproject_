@@ -46,3 +46,5 @@
         gl.innerHTML = '<p class="text-secondary p-4 text-center border-dashed rounded mt-4">Define a financial target to begin tracking.</p>';
     } else {
         appData.goals.forEach(g => {
+	    const progressRaw = (liquidNetWorth / g.target) * 100;
+            const progress = Math.min(Math.max(progressRaw, 0), 100);
