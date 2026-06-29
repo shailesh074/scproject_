@@ -129,3 +129,12 @@ function initWidgetListeners() {
                 <div class="expense-item" style="background: rgba(0,229,255,0.05); border-color: rgba(0,229,255,0.2);">
                     <div><h4 class="text-cyan">Total Debt Burden</h4><p class="text-xs text-secondary">Over ${n} months</p></div>
                     <div class="text-cyan font-extrabold text-xl">${formatINR(totalPayment)}</div>
+		</div>
+            `;
+        } else {
+            res.classList.add('hidden');
+            sched.innerHTML = '<p class="text-secondary p-4 text-center border-dashed rounded mt-4">Awaiting valid Loan Parameters...</p>';
+        }
+    };
+    ['emi-p', 'emi-r', 'emi-t'].forEach(id => sel(id).addEventListener('input', calcEMI));
+
