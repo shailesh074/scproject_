@@ -100,3 +100,5 @@ function renderCharts() {
             appData.charts.expenseBar = new Chart(ctxBar, {
 		type: 'bar',
                 data: {
+		    labels: labels,
+                    datasets: [{
