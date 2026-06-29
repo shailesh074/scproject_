@@ -144,3 +144,8 @@ function renderCharts() {
                     plugins: { legend: { position: 'right', labels: { padding: 20 } } }
                 }
             });
+	} else {
+            appData.charts.expenseRadial.data.labels = labels;
+            appData.charts.expenseRadial.data.datasets[0].data = data;
+            appData.charts.expenseRadial.update();
+        }
