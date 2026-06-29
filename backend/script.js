@@ -57,3 +57,5 @@
                         <span class="font-extrabold ${isComplete ? 'text-green' : 'text-cyan'} text-xl">${progress.toFixed(1)}%</span>
 		    </div>
                     <div class="progress-bg"><div class="progress-fill ${isComplete ? 'bg-green' : ''}" style="width: ${progress}%;"></div></div>
+		    <div class="goal-meta mt-4">
+                        <span>Target: <strong class="text-white">${formatINR(g.target)}</strong></span>
