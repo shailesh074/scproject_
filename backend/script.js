@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // 1. GLOBAL STATE MANAGEMENT
 const appData = {
     budget: 0,
@@ -226,9 +225,9 @@ function destroyThreeJS() {
         }, 1500);
     }
 }
-=======
+
 //THIS IS BACKEND;
-<<<<<<< HEAD
+
  // 4b. Sidebar Routing Logic
     document.querySelectorAll('.nav-links li').forEach(l => {
         l.onclick = () => {
@@ -367,8 +366,8 @@ function initWidgetListeners() {
         }
     };
     ['emi-p', 'emi-r', 'emi-t'].forEach(id => sel(id).addEventListener('input', calcEMI));
-=======
-i   // --- 5. Mutual Fund SIP Projection (Compound Math) ---
+
+   // --- 5. Mutual Fund SIP Projection (Compound Math) ---
     const calcSIP = () => {
         const p = +sel('sip-p').value;
         const r_annual = +sel('sip-r').value;
