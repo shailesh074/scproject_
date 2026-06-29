@@ -10,4 +10,6 @@
 	    tb.innerHTML += `
                 <tr>
 		    <td class="font-medium">${t.date}</td>
-                    <td class="text-xs text-secondary font-mono">${t.id}</td> 
+                    <td class="text-xs text-secondary font-mono">${t.id}</td>
+		    <td class="font-bold text-white">${t.title}</td>
+                    <td><span class="glass px-4 py-2 rounded-xl text-xs">${icon} ${t.category}</span></td>
