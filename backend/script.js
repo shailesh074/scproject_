@@ -64,3 +64,8 @@ function initWidgetListeners() {
                 category: cat,
                 amount: amount
             });
+	    // Sort chronologically descending
+            appData.transactions.sort((a, b) => b.date.localeCompare(a.date));
+
+            // Reset fields
+            sel('new-txn-title').value = '';
