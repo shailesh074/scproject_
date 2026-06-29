@@ -96,3 +96,5 @@ function renderCharts() {
     // --- Chart 1: Bar Chart (Linear Distribution) ---
     const ctxBar = sel('categoryChart');
     if (ctxBar) {
+        if (!appData.charts.expenseBar) {
+            appData.charts.expenseBar = new Chart(ctxBar, {
