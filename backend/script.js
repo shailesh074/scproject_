@@ -129,3 +129,8 @@ function renderCharts() {
         if (!appData.charts.expenseRadial) {
             appData.charts.expenseRadial = new Chart(ctxDoughnut, {
                 type: 'doughnut',
+		data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: bgColors,
