@@ -25,3 +25,5 @@
         al.innerHTML = '<p class="text-secondary p-4 text-center border-dashed rounded mt-4">No external assets tracked.</p>';
 	} else {
         appData.accounts.forEach(a => {
+	   al.innerHTML += `
+                <div class="expense-item">
