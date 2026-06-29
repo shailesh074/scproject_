@@ -38,3 +38,7 @@ function initWidgetListeners() {
         const res = sel('calc-res');
         if (p > 0 && r > 0 && t > 0) {
             const int = (p * r * t) / 100;
+            res.innerHTML = `Yield: ${formatINR(int)}<br>Maturity Value: ${formatINR(p + int)}`;
+            res.classList.remove('hidden');
+        } else {
+            res.classList.add('hidden');
