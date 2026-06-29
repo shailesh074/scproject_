@@ -23,3 +23,8 @@
                 }
             }, 250);
         };
+    });
+
+    // Initialize Widget Event Listeners
+    initWidgetListeners();
+});
