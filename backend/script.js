@@ -109,3 +109,8 @@ function renderCharts() {
 			barThickness: 'flex',
                         maxBarThickness: 40
                     }]
+		},
+                options: {
+                    responsive:true, maintainAspectRatio:false,
+                    plugins: { legend: {display: false}, tooltip: { mode: 'index', intersect: false, padding: 12, cornerRadius: 8 } },
+                    scales: { y: { beginAtZero: true } }
