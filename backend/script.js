@@ -31,3 +31,5 @@
                         <div class="expense-icon" style="background: rgba(124,58,237,0.1); color: var(--accent-purple);">🏦</div>
 			<div>
                             <h4>${a.name}</h4>
+			    <p class="text-xs text-secondary">Verified Asset</p>
+                        </div>
