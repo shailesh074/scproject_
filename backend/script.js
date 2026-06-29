@@ -74,3 +74,8 @@ function initWidgetListeners() {
             sel('new-txn-title').focus(); // Accessibility
 
             renderApp();
+	} else {
+            alert('SYSTEM HALT: Transaction amount must be greater than zero.');
+        }
+    };
+
