@@ -53,3 +53,9 @@ function initWidgetListeners() {
         const cat = sel('new-txn-cat').value;
         let date = sel('new-txn-date').value;
 
+        
+        if (!date) date = new Date().toISOString().split('T')[0];
+
+        if(amount > 0) {
+            appData.transactions.push({
+                id: generateUUID(),
