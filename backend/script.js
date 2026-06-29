@@ -21,3 +21,5 @@
 
     // Phase 5: Assets & Bank Accounts
     const al = sel('accounts-list'); al.innerHTML = '';
+    if (appData.accounts.length === 0) {
+        al.innerHTML = '<p class="text-secondary p-4 text-center border-dashed rounded mt-4">No external assets tracked.</p>';
