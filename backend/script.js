@@ -84,3 +84,5 @@ function renderCharts() {
     // Aggregation Logic for Categories
     const catTotals = {};
     appData.transactions.forEach(t => {
+	catTotals[t.category] = (catTotals[t.category] || 0) + t.amount;
+    });
