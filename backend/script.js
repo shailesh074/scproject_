@@ -8,3 +8,8 @@
             document.querySelectorAll('.app-view').forEach(v => {
                 v.style.opacity = '0'; 
                 setTimeout(() => v.classList.remove('active'), 250);
+	     });
+
+            setTimeout(() => {
+                const targetView = sel(`view-${l.dataset.view}`);
+                if (targetView) {
