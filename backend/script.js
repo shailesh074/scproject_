@@ -47,3 +47,11 @@ i   // --- 5. Mutual Fund SIP Projection (Compound Math) ---
     };
 }
 
+// 6. MASTER RENDER ENGINE
+function renderApp() {
+    // Phase 1: Mathematical Aggregation
+    let totalExpenses = 0;
+    appData.transactions.forEach(t => totalExpenses += t.amount);
+    
+    let totalAssets = 0;
+    appData.accounts.forEach(a => totalAssets += a.balance);
