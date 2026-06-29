@@ -74,3 +74,5 @@
 function renderCharts() {
     if(!window.Chart) {
         console.warn('Chart.js engine offline. Visualizations disabled.');
+	return;
+    }
