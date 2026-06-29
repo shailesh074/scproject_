@@ -99,3 +99,13 @@ function initWidgetListeners() {
     };
 
     // --- 4. Loan Amortization Algorithm ---
+     const calcEMI = () => {
+        const p = +sel('emi-p').value;
+        const r_annual = +sel('emi-r').value;
+        const n = +sel('emi-t').value;
+        const res = sel('emi-res');
+        const sched = sel('emi-schedule');
+
+        if (p > 0 && r_annual > 0 && n > 0) {
+            const r = r_annual / 12 / 100; // Monthly rate
+            // EMI = [P x R x (1+R)^N]/[(1+R)^N-1]
