@@ -33,3 +33,5 @@
                             <h4>${a.name}</h4>
 			    <p class="text-xs text-secondary">Verified Asset</p>
                         </div>
+		    </div>
+                    <div class="text-cyan font-bold text-lg">${formatINR(a.balance)}</div>
