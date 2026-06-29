@@ -61,3 +61,5 @@
                         <span>Target: <strong class="text-white">${formatINR(g.target)}</strong></span>
 			<span>Allocated: <strong class="text-white">${formatINR(Math.min(liquidNetWorth, g.target))}</strong></span>
                     </div>
+		    </div>
+            `;
