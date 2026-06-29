@@ -149,3 +149,8 @@ function renderCharts() {
             appData.charts.expenseRadial.data.datasets[0].data = data;
             appData.charts.expenseRadial.update();
         }
+    }
+}
+
+// --- Chart 3: SIP Line Chart Projection ---
+function renderSIPChart(years, monthlyP, rate) {
