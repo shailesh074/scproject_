@@ -114,3 +114,8 @@ function renderCharts() {
                     responsive:true, maintainAspectRatio:false,
                     plugins: { legend: {display: false}, tooltip: { mode: 'index', intersect: false, padding: 12, cornerRadius: 8 } },
                     scales: { y: { beginAtZero: true } }
+		}
+            });
+        } else {
+            appData.charts.expenseBar.data.labels = labels;
+            appData.charts.expenseBar.data.datasets[0].data = data;
