@@ -13,3 +13,13 @@
             setTimeout(() => {
                 const targetView = sel(`view-${l.dataset.view}`);
                 if (targetView) {
+		    targetView.classList.add('active');
+                    targetView.style.opacity = '1';
+
+                    // Special hook for Analytics view rendering
+                    if(l.dataset.view === 'analytics' || l.dataset.view === 'investments') {
+                        renderCharts();
+                    }
+                }
+            }, 250);
+        };
