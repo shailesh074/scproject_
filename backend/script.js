@@ -179,3 +179,8 @@ function renderSIPChart(years, monthlyP, rate) {
             type: 'line',
             data: {
                 labels: labels,
+		datasets: [
+                    { 
+                        label: 'Invested Capital', 
+                        data: investedData, 
+                        borderColor: '#7C3AED',
