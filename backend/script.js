@@ -209,3 +209,7 @@ function renderSIPChart(years, monthlyP, rate) {
     } else {
         appData.charts.sipLineChart.data.labels = labels;
         appData.charts.sipLineChart.data.datasets[0].data = investedData;
+	appData.charts.sipLineChart.data.datasets[1].data = returnsData;
+        appData.charts.sipLineChart.update();
+    }
+}
