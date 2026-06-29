@@ -366,5 +366,4 @@ function initWidgetListeners() {
         }
     };
     ['emi-p', 'emi-r', 'emi-t'].forEach(id => sel(id).addEventListener('input', calcEMI));
->>>>>>> widget_engine
 
