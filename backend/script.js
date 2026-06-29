@@ -89,4 +89,6 @@ function renderCharts() {
     
     const labels = Object.keys(catTotals).length ? Object.keys(catTotals) : ['Awaiting Data'];
     const data = Object.values(catTotals).length ? Object.values(catTotals) : [0];
-    
+   
+    // Fintech Corporate Color Palette
+    const bgColors = ['#00E5FF', '#7C3AED', '#FF3366', '#f59e0b', '#10b981', '#3b82f6'];
