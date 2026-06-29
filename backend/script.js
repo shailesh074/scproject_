@@ -53,3 +53,5 @@
             gl.innerHTML += `
 	       <div class="expense-item" style="display:block; padding: 1.5rem;">
                     <div class="flex-between align-center mb-2">
+		        <h4 class="text-lg ${isComplete ? 'text-green' : ''}">${isComplete ? '🎉 ' : ''}${g.name}</h4>
+                        <span class="font-extrabold ${isComplete ? 'text-green' : 'text-cyan'} text-xl">${progress.toFixed(1)}%</span>
