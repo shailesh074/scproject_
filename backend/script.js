@@ -109,3 +109,13 @@ function initWidgetListeners() {
         if (p > 0 && r_annual > 0 && n > 0) {
             const r = r_annual / 12 / 100; // Monthly rate
             // EMI = [P x R x (1+R)^N]/[(1+R)^N-1]
+	    const emi = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+            const totalPayment = emi * n;
+            const totalInterest = totalPayment - p;
+
+            res.innerHTML = `Monthly Installment: <br><span style="font-size: 2.5rem">${formatINR(emi)}</span>`;
+            res.classList.remove('hidden');
+
+            sched.innerHTML = `
+                <div class="expense-item">
+                    <div><h4>Principal Borrowed</h4><p class="text-xs text-secondary">Initial Loan Amount</p></div>
