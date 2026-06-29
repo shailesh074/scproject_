@@ -167,3 +167,5 @@ function renderSIPChart(years, monthlyP, rate) {
     // Generate data points for each year
     for(let yr = 1; yr <= years; yr++) {
         labels.push(`Year ${yr}`);
+	const n = yr * 12;
+        const currentInvested = monthlyP * n;
