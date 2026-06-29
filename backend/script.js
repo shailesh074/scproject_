@@ -20,3 +20,8 @@ i   // --- 5. Mutual Fund SIP Projection (Compound Math) ---
                 <div class="flex-between mb-4"><span class="text-secondary text-sm">Wealth Generated:</span> <span class="text-green">+${formatINR(wealthGained)}</span></div>
                 <div class="divider mb-4"></div>
                 <div class="text-secondary text-xs uppercase tracking-wide">Projected Maturity Value</div>
+		<div class="text-cyan font-extrabold text-3xl mt-2">${formatINR(futureValue)}</div>
+            `;
+            res.classList.remove('hidden');
+
+            // Hook into Chart Engine
