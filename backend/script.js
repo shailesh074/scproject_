@@ -92,3 +92,5 @@ function renderCharts() {
    
     // Fintech Corporate Color Palette
     const bgColors = ['#00E5FF', '#7C3AED', '#FF3366', '#f59e0b', '#10b981', '#3b82f6'];
+
+    // --- Chart 1: Bar Chart (Linear Distribution) ---
