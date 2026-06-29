@@ -98,3 +98,5 @@ function renderCharts() {
     if (ctxBar) {
         if (!appData.charts.expenseBar) {
             appData.charts.expenseBar = new Chart(ctxBar, {
+		type: 'bar',
+                data: {
