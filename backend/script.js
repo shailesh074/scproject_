@@ -7,3 +7,5 @@
     } else {
         appData.transactions.forEach(t => {
             const icon = getCategoryIcon(t.category);
+	    tb.innerHTML += `
+                <tr>
