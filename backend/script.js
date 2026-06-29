@@ -9,3 +9,5 @@
             const icon = getCategoryIcon(t.category);
 	    tb.innerHTML += `
                 <tr>
+		    <td class="font-medium">${t.date}</td>
+                    <td class="text-xs text-secondary font-mono">${t.id}</td> 
