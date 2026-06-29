@@ -40,3 +40,10 @@ i   // --- 5. Mutual Fund SIP Projection (Compound Math) ---
             appData.goals.push({ id: generateUUID(), name, target });
             sel('goal-name').value = '';
             sel('goal-target').value = '';
+            renderApp();
+        } else {
+            alert('SYSTEM HALT: Target amount must be greater than zero.');
+        }
+    };
+}
+
