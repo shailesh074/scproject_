@@ -33,3 +33,8 @@
 function initWidgetListeners() {
 
     // --- 1. Quick Interest Calculator ---
+    const calcInt = () => {
+        const p = +sel('calc-p').value, r = +sel('calc-r').value, t = +sel('calc-t').value;
+        const res = sel('calc-res');
+        if (p > 0 && r > 0 && t > 0) {
+            const int = (p * r * t) / 100;
