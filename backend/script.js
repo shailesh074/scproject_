@@ -173,3 +173,9 @@ function renderSIPChart(years, monthlyP, rate) {
         investedData.push(currentInvested);
 	returnsData.push(futureValue);
     }
+
+    if (!appData.charts.sipLineChart) {
+        appData.charts.sipLineChart = new Chart(ctxSIP, {
+            type: 'line',
+            data: {
+                labels: labels,
