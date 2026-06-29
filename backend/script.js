@@ -48,3 +48,6 @@
         appData.goals.forEach(g => {
 	    const progressRaw = (liquidNetWorth / g.target) * 100;
             const progress = Math.min(Math.max(progressRaw, 0), 100);
+	    const isComplete = progress >= 100;
+            
+            gl.innerHTML += `
