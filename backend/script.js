@@ -69,3 +69,8 @@ function initWidgetListeners() {
 
             // Reset fields
             sel('new-txn-title').value = '';
+	    sel('new-txn-amount').value = '';
+            sel('new-txn-date').value = '';
+            sel('new-txn-title').focus(); // Accessibility
+
+            renderApp();
