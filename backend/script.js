@@ -194,3 +194,7 @@ function renderSIPChart(years, monthlyP, rate) {
                         borderColor: '#00E5FF', 
                         backgroundColor: 'rgba(0, 229, 255, 0.1)', 
                         borderWidth: 3,
+			fill: true,
+                        pointRadius: 4,
+                        tension: 0.4
+                    }
