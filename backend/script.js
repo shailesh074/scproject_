@@ -70,3 +70,8 @@ function renderApp() {
         rl.innerHTML = '<p class="text-secondary p-4 text-center border-dashed rounded mt-4">Ledger is empty.</p>';
     } else {
         appData.transactions.slice(0, 5).forEach(t => {
+	    const icon = getCategoryIcon(t.category);
+            rl.innerHTML += `
+                <div class="expense-item">
+                    <div class="flex align-center">
+                        <div class="expense-icon">${icon}</div>
