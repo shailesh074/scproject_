@@ -451,7 +451,7 @@ function renderApp() {
                     </div>
 		    <div class="text-red font-bold text-lg">-${formatINR(t.amount)}</div>
                 </div>
-=======
+
     // Phase 4: Master Ledger Table (Transactions View)
    i const tb = sel('transactions-body'); tb.innerHTML = '';
     if (appData.transactions.length === 0) {
@@ -488,14 +488,11 @@ function renderApp() {
 		    </div>
                     <div class="text-cyan font-bold text-lg">${formatINR(a.balance)}</div>
 	        </div>
->>>>>>> render_analytics
             `;
         });
     }
 
-<<<<<<< HEAD
 
-=======
     // Phase 6: Financial Goals Progress Tracker
     const gl = sel('goals-list'); gl.innerHTML = '';
     if (appData.goals.length === 0) {
@@ -619,6 +616,10 @@ function renderSIPChart(years, monthlyP, rate) {
     const returnsData = [];
 
     const i = rate / 100 / 12;
+    if (rate <= 0) {
+    alert("Please enter rate higher than 0");
+    return;
+}
 
     // Generate data points for each year
     for(let yr = 1; yr <= years; yr++) {
@@ -669,4 +670,3 @@ function renderSIPChart(years, monthlyP, rate) {
         appData.charts.sipLineChart.update();
     }
 }
-
