@@ -105,4 +105,7 @@ function renderCharts() {
 			label: 'Capital Outflow (₹)',
                         data: data,
 			backgroundColor: '#00E5FF',
-                        borderRadius: 8,
+                        borderRadius: 8i,
+			barThickness: 'flex',
+                        maxBarThickness: 40
+                    }]
