@@ -44,3 +44,5 @@
     const gl = sel('goals-list'); gl.innerHTML = '';
     if (appData.goals.length === 0) {
         gl.innerHTML = '<p class="text-secondary p-4 text-center border-dashed rounded mt-4">Define a financial target to begin tracking.</p>';
+    } else {
+        appData.goals.forEach(g => {
