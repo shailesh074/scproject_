@@ -139,3 +139,8 @@ function renderCharts() {
                         hoverOffset: 10
                     }]
                 },
+		options: {
+                    responsive:true, maintainAspectRatio:false, cutout: '75%',
+                    plugins: { legend: { position: 'right', labels: { padding: 20 } } }
+                }
+            });
