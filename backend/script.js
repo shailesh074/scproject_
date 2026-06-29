@@ -15,4 +15,8 @@ i   // --- 5. Mutual Fund SIP Projection (Compound Math) ---
             const totalInvested = p * n;
             const wealthGained = futureValue - totalInvested;
 
-	    ;
+	    res.innerHTML = `
+                <div class="flex-between mb-2"><span class="text-secondary text-sm">Invested Capital:</span> <span>${formatINR(totalInvested)}</span></div>
+                <div class="flex-between mb-4"><span class="text-secondary text-sm">Wealth Generated:</span> <span class="text-green">+${formatINR(wealthGained)}</span></div>
+                <div class="divider mb-4"></div>
+                <div class="text-secondary text-xs uppercase tracking-wide">Projected Maturity Value</div>
