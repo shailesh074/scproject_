@@ -161,3 +161,5 @@ function renderSIPChart(years, monthlyP, rate) {
     const labels = [];
     const investedData = [];
     const returnsData = [];
+
+    const i = rate / 100 / 12;
